@@ -4,9 +4,8 @@ function addCommas(num) {
     for(let i = start - 2; i >= 0; i-=3) {
         numArr.splice(i, 0, ',');
     }
-    return num;
+    return numArr.join('');
 }
-
 
 addCommas(-3141592.65);
 module.exports = addCommas;
