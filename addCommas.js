@@ -10,3 +10,6 @@ function addCommas(num) {
     return numArr.join('');
 }
 
+addCommas(-3141592.65);
+
+module.exports = addCommas;
