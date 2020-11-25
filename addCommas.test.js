@@ -13,4 +13,7 @@ describe("#addCommas", () => {
     expect(addCommas(12345.678)).toEqual('12,345.678');
     expect(addCommas(-3141592.65)).toEqual('-3,141,592.65');
   })
+
+
+
 });
