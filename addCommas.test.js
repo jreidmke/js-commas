@@ -14,9 +14,13 @@ describe("#addCommas", () => {
     expect(addCommas(-3141592.65)).toEqual('-3,141,592.65');
   })
 
-  test("returns error if argument not num", () => {
-    expect(addCommas('pizza')).toEqual('Uncaught Error: Input must be number!');
+  test("returns error", () => {
+    expect(() => {
+      addCommas('pizza').toThrow('Input must be number!');
+    })
+
+    expect(() => {
+      addCommas(true).toThrow('Input must be number!');
+    })
   })
-
-
 });
